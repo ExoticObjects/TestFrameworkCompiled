@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.ios.public_header_files  = 'ios/TestLibrary.embeddedframework/TestLibrary.framework/Versions/A/Headers/*.h'
   s.ios.resource             = 'ios/TestLibrary.embeddedframework/TestLibrary.framework/Versions/A/Resources/**/*'
   s.ios.vendored_frameworks  = 'ios/TestLibrary.embeddedframework/TestLibrary.framework'
+  s.ios.frameworks = ["MobileCoreServices", "CoreGraphics", "Security", "SystemConfiguration"]
 end
